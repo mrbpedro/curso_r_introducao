@@ -1,0 +1,174 @@
+---
+title: "Fundamentos R"
+author: "Pedro Barbosa"
+editor: visual
+format:
+  revealjs: 
+    theme: serif
+    incremental: true
+    scrollable: true
+---
+
+## Contexto - A era do Big Data
+
+-   Há um processo crescente de produção de dados nas últimas décadas com o avanço tecnológico e da internet.
+
+-   Se pensarmos em nossos aparelhos celulares, empresas nas quais temos cadastros é possível imaginar o quanto de informação está sendo produzida sobre nós diariamente.
+
+-   Este contexto tem suscitado tanto um debate de regulação de dados privados, quanto a disponibilização de dados públicos (`transparência`).
+
+## Data Science
+
+-   Este contexto de produção de um volume colossal de produção de dados suscitou o surgimento de uma ampla área interdisciplinar chamada `Ciência de dados`.
+
+-   Ciência de dados consiste, portanto, em um conjunto de procedimentos e técnicas para produzir conhecimento a partir dos dados.
+
+-   Ela hoje perpassa tanto a pesquisa acadêmica quanto a pesquisa para o mercado ou para negócios.
+
+## Dados não são informações
+
+-   Ao contrário do que vulgarmente se afirma: dados não são informações, mas são registros.
+
+-   Dados são produzidos a partir de diferentes fontes: estatísticas, textos, imagens, vídeos e etc.
+
+-   Para se tornarem informações, eles precisam ser processados, interpretados e relacionados.
+
+## 
+
+-   E para gerar conhecimento, eles precisam ser analisados a partir do método.
+
+![](data_wisdom.jpg){fig-align="center" width="900"}
+
+## Diferentes tipos de datasets
+
+-   Existem diferentes tipos de bancos:
+    -   Bancos estruturados e relacionais (em formato de colunas e linhas)
+
+    -   Banco estruturado não relacional: (listas)
+
+    -   Bancos não-estruturados
+
+        -   Textos, vídeos etc.
+-   Todos estes bancos podem ser fonte de análise para a pesquisa das Ciências Sociais. Mas focaremos nos bancos estruturados e relacionais.
+
+## Por que usar a programação para a análise de dados?
+
+-   No contexto de *Big Data*, quanto maior as observações (linhas) e variáveis (colunas), mais inexequível torna-se a utilização de *softwares* tradicionais como `Excel`.
+
+-   Imaginem identificar erros de digitação, linhas duplicadas, combinar bancos distintos em tabelas com mais de 5000 linhas?
+
+    -   (eu já tive essa experiência e não recomendo)
+
+-   Portanto, programação torna-se essencial para operar com tais bancos.
+
+## Principais linguagens para a análise da dados
+
+-   O Python (mais utilizado no mercado)
+
+-   O R (mais utilizado na academia, porém crescentemente utilizado no mercado também)
+
+## O que é R?
+
+-   O **R** é uma linguagem de programação amplamente utilizada para:
+
+-   Análise estatística descritiva e inferencial.
+
+-   Visualização de dados estáticos e interativos.
+
+-   Manipulação e limpeza de bancos (*Data wrangling* e *Data cleaning*).
+
+-   Raspagem de bancos online (*Web scraping*).
+
+-   Esta apresentação foi feita no **R**
+
+## Por que usar o R?
+
+-   Além da facilitação de operar com bancos grandes, o R é um *software* livre (portanto gratuito)
+
+-   Facilita a reproducibilidade na prática científica.
+
+-   É aperfeiçoado constantemente por meio dos pacotes (*packpages*)
+
+-   Existe uma ampla comunidade na rede de apoio.
+
+-   CRAN
+
+## Familiarizando-se com RStudio
+
+-   O RStudio é um interpretador da linguagem R
+
+-   (ir para o RStudio)
+
+## Buscando ajuda
+
+-   Utilizar o `help()`
+
+-   Buscar na documentação do *R*
+
+-   Google - Adicionando *R* à pesquisa já é suficiente para a maioria das pesquisas
+
+-   stackoverflow
+
+-   https://rseek.org/ (já direciona a busca para assuntos relacionados ao *R*)
+
+## Objetos
+
+-   O R é uma liguagem orientada a objetos
+
+-   Objetos são como caixas que armazenam conteúdo
+
+![](objeto.jpg){fig-align="center" width="900"} fonte: Llaudet & Imai (2023)
+
+\-\--
+
+# De volta ao RStudio...
+
+## Sugestão de exercício
+
+1.  Crie dois objetos e os transforme em um dataframe
+
+2.  Crie direto uma dataframe
+
+## Carregando os dados
+
+-   O R importa e exporta dados em diferentes formatos (csv, xlsx, txt, .dta)
+
+-   E o R produz dados no formato .RData
+
+-   Vamos ao R...
+
+## Tipos de variáveis
+
+-   Numéricas - Naturais (integer) - Fracionários (dbl) - Binários
+
+-   Categóricas - text (character)
+
+## Transformação dos dados
+
+-   Cerca de 80% do trabalho total com dados consiste em limpá-los
+
+-   A maioria esmagadora dos bancos possuem erros e são desorganizados
+
+-   O pacote `tidyverse` possui um conjunto de funções e pacotes que auxiliam muito na limpeza do banco
+
+-   Vamos para o R...
+
+## Operadores lógicos do R
+
+| Operadores |   Significado    |
+|:----------:|:----------------:|
+|     ==     |      Igual       |
+|     !=     |    Não igual     |
+|     \<     |   Menor do que   |
+|    \<=     | Menor ou igual a |
+|     \>     |   Maior do que   |
+|    \>=     | Maior ou igual a |
+|     \|     |        ou        |
+|     &      |        e         |
+|    %in%    |   no conjunto    |
+|   is.na    |    é missing     |
+|   !is.na   |  não é missing   |
+
+## 
+
+## (De volta para R...)
