@@ -31,6 +31,11 @@ names(df)
 #1) Os anos vem com y na frente. Isso será um problema para o R interpretar esse 
 ## como número que tem uma ordem crescente.
 
+#Como editar os dados diretamente no R?
+fix(df)
+teste <- DataEditR::data_edit(df)
+
+
 glimpse(df)
 
 #2) Os valores numéricos estão como texto
